@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: citibike
+    description: a clone of the external staging tables
+    database: academy_case
+    schema: raw
+    tables:
+      - name: station_info                
+      - name: station_status
