@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: base_station_info
+    columns:
+      - name: STATION_ID
+        description: id of the station
+        tests:
+          - unique
+          - not_null
+
+  - name: base_station_status
+    columns:
+      - name: STATION_ID
+        description: id of the station
+        tests:
+          - relationships:
+              to: ref('base_station_info')
+              field: STATION_ID
+    

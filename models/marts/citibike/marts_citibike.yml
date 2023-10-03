@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: dim_station_info
+  - name: fct_station_status
